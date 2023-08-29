@@ -1,0 +1,48 @@
+.box-input{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 20px;
+}
+
+.input {
+    width: 400px;
+    background: var(--fifth-color);
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.box-button{
+    display: flex;
+    width: 71.8%;
+    justify-content: end;
+    gap: 10px;
+}
+
+.btn{
+    padding: 5px 0px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.tambah {
+    background: #54B435;
+}
+
+.tambah:hover{
+    background: #3c8922;
+    cursor: pointer;
+}
+
+.bersihkan {
+    background: #F49D1A;
+}
+
+.bersihkan:hover{
+    background: #c07a11;
+    cursor: pointer;
+}
+

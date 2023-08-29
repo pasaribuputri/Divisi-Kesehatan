@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <title>Unauthentication | Divisi Kesehatan</title>
+    <style>
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--fourth-color);
+      }
+
+      .warning {
+        display: flex;
+        align-items: center;
+      }
+
+      .text {
+        font-family: Quicksand-Bold;
+        font-size: 32px;
+        color: var(--second-color);
+      }
+
+      img {
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+      }
+
+      a {
+        margin-top: 50px;
+        font-family: Quicksand-SemiBold;
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--second-color);
+      }
+
+      a:hover {
+        color: var(--fifth-color);
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="warning">
+        <img src="../../assets/logos/warning.png" alt="warning" />
+        <label class="text">You don't have authentication</label>
+      </div>
+      <a href="../login">Kembali ke login</a>
+    </div>
+  </body>
+</html>

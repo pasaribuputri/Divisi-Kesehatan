@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/mahasiswa.css">
+    <title>Data Mahasiswa | Divisi Kesehatan</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <sidebar class="sidebar">
+        <button class="toggleSidebar">
+          <i class="fa-solid fa-chevron-left fa-sm"></i>
+        </button>
+        <div class="header-sidebar">
+          <div class="logo">
+            <img src="../../assets/logos/patient.png" alt="logo-divkes" />
+            <label>Kesehatan</label>
+          </div>
+        </div>
+        <div class="body-sidebar">
+          <nav class="navbar">
+            <ul class="nav">
+              <li class="nav-item dashboard">
+                <span>
+                  <i class="fa-solid fa-house fa-lg"></i>
+                </span>
+                <label> Dashboard </label>
+              </li>
+              <li class="nav-item">
+                <div class="chevron-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <span>
+                  <i class="fa-solid fa-layer-group fa-lg"></i>
+                </span>
+                <label> Mahasiswa </label>
+              </li>
+              <div class="child mahasiswa">
+                <ul class="nav-user">
+                  <li class="nav-item-user data-mahasiswa">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Data Mahasiswa</label>
+                  </li>
+                  <li class="nav-item-user data-sehat">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Data Sehat</label>
+                  </li>
+                  <li class="nav-item-user data-sakit">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Data Sakit</label>
+                  </li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <div class="chevron-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <span>
+                  <i class="fa-solid fa-pills fa-lg"></i>
+                </span>
+                <label> Obat </label>
+              </li>
+              <div class="child obat">
+                <ul class="nav-user">
+                  <li class="nav-item-user data-obat">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Data Obat</label>
+                  </li>
+                  <li class="nav-item-user pembelian-obat">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Pembelian Obat</label>
+                  </li>
+                </ul>
+              </div>
+              <li class="nav-item active">
+                <div class="chevron-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <span>
+                  <i class="fa-regular fa-clipboard fa-lg"></i>
+                </span>
+                <label> Laporan </label>
+              </li>
+              <div class="child laporan active">
+                <ul class="nav-user">
+                  <li class="nav-item-user riwayat-sakit">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Riwayat Sakit</label>
+                  </li>
+                  <li class="nav-item-user pengeluaran-dana">
+                    <span>
+                      <i class="fa-solid fa-caret-right fa-lg"></i>
+                    </span>
+                    <label style="white-space: nowrap">Pengeluaran Dana</label>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-sidebar">
+          <div class="info-user">
+            <div class="chevron-down">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="profil-user">
+              <div class="icon">
+                <img src="../../assets/logos/profile.png" alt="" />
+              </div>
+              <span class="user-name">
+                <label class="name">Putri Mulyani</label>
+                <label class="role">Admin</label>
+              </span>
+            </div>
+          </div>
+          <div class="collapse-info-user">
+            <ul class="nav-user">
+              <li class="nav-item-user log-out">
+                <span>
+                  <i class="fa-solid fa-door-open fa-lg"></i>
+                </span>
+                <label style="white-space: nowrap"> Log out </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </sidebar>
+      <main class="main">
+        <div class="header">
+          <div class="box-judul">
+            <label class="title">Laporan</label>
+            <label>Pengeluaran Dana</label>
+          </div>
+          <div class="container-currentdate">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <label class="current-date"></label>
+          </div>
+        </div>
+        <div class="container-content">
+          <!-- ISI CONTENT  -->
+          <table class="content-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>ID Pengeluaran</th>
+                    <th>Tanggal Pengeluaran</th>
+                    <th>Keterangan</th>
+                    <th>Total Pengeluaran</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+          <!-- END CONTENT  -->
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8b219fb2a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/js/allPage.js"></script>
+    <script src="../../assets/js/pengeluaran.js"></script>
+  </body>
+</html>
